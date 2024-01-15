@@ -2,28 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0;url=https://tauvexx.github.io/url-shortener/">
     <title>Redirecting...</title>
-    <script>
-        // JavaScript code for redirection
-        window.onload = function () {
-            var urlParams = new URLSearchParams(window.location.search);
-            var shortCode = urlParams.get('ShortCode');
-
-            if (shortCode) {
-                var longUrl = urlMappings[shortCode];
-                if (longUrl) {
-                    window.location.replace(longUrl);
-                } else {
-                    alert('Short code not found.');
-                    window.location.replace("https://tauvexx.github.io/url-shortener/"); // Redirect to a default page
-                }
-            } else {
-                alert('Short code parameter not provided.');
-                window.location.replace("https://tauvexx.github.io/url-shortener/"); // Redirect to a default page
-            }
-        };
-    </script>
 </head>
 <body>
     <p>If you are not redirected, <a href="https://tauvexx.github.io/url-shortener/">click here</a>.</p>
